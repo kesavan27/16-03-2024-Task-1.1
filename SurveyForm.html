@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback Form</title>
+
+    <link rel="icon" href="./assets/logo-vk.png">
+
+    <link rel="stylesheet" href="./assets/SurveyForm.css">
+</head>
+<body>
+
+    <div class="container">
+        <form class="feedback-form">
+            <h1>Customer Feedback Form</h1>
+
+            <label for="name">Name <span class="required">*</span></label>
+            <div class="name-fields">
+                <input type="text" id="first-name" name="first-name" placeholder="First" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last" required>
+            </div>
+
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="experience">Your Experience <span class="required">*</span></label>
+            <div class="rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+            <p>Overall, how would you rate your experience with us?</p>
+
+            <fieldset>
+                <legend>How satisfied are you with <span class="required">*</span></legend>
+                <div class="rating-group">
+                    <label>Purchase</label>
+                    <div>
+                        <input type="radio" name="purchase" value="1" required> 
+                        <input type="radio" name="purchase" value="2" required> 
+                        <input type="radio" name="purchase" value="3" required> 
+                        <input type="radio" name="purchase" value="4" required> 
+                        <input type="radio" name="purchase" value="5" required>
+                    </div>
+                </div>
+                <div class="rating-group">
+                    <label>Service</label>
+                    <div>
+                        <input type="radio" name="service" value="1" required> 
+                        <input type="radio" name="service" value="2" required> 
+                        <input type="radio" name="service" value="3" required> 
+                        <input type="radio" name="service" value="4" required> 
+                        <input type="radio" name="service" value="5" required>
+                    </div>
+                </div>
+                <div class="rating-group">
+                    <label>Company Overall</label>
+                    <div>
+                        <input type="radio" name="company" value="1" required> 
+                        <input type="radio" name="company" value="2" required> 
+                        <input type="radio" name="company" value="3" required> 
+                        <input type="radio" name="company" value="4" required> 
+                        <input type="radio" name="company" value="5" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>How likely are you to <span class="required">*</span></legend>
+                <div class="rating-group">
+                    <label>Buy from us again</label>
+                    <div>
+                        <input type="radio" name="buy-again" value="1" required> 
+                        <input type="radio" name="buy-again" value="2" required> 
+                        <input type="radio" name="buy-again" value="3" required> 
+                        <input type="radio" name="buy-again" value="4" required> 
+                        <input type="radio" name="buy-again" value="5" required>
+                    </div>
+                </div>
+                <div class="rating-group">
+                    <label>Recommend our product to others</label>
+                    <div>
+                        <input type="radio" name="recommend-product" value="1" required> 
+                        <input type="radio" name="recommend-product" value="2" required> 
+                        <input type="radio" name="recommend-product" value="3" required> 
+                        <input type="radio" name="recommend-product" value="4" required> 
+                        <input type="radio" name="recommend-product" value="5" required>
+                    </div>
+                </div>
+                <div class="rating-group">
+                    <label>Recommend our company to others</label>
+                    <div>
+                        <input type="radio" name="recommend-company" value="1" required> 
+                        <input type="radio" name="recommend-company" value="2" required> 
+                        <input type="radio" name="recommend-company" value="3" required> 
+                        <input type="radio" name="recommend-company" value="4" required> 
+                        <input type="radio" name="recommend-company" value="5" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <label for="comments">Additional comments or suggestions</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
